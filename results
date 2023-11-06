@@ -1,0 +1,69 @@
+## issue 1
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode(0)
+Expecting:
+    Traceback (most recent call last):
+    ...
+    TypeError: 'int' object is not iterable
+ok
+2 items had no tests:
+    morse
+    morse.decode
+1 items passed all tests:
+   2 tests in morse.encode
+2 tests in 3 items.
+2 passed and 0 failed.
+Test passed.
+
+
+## issue 2
+============================= test session starts =============================
+collecting ... collected 3 items
+
+test_morse.py::test_decode[... --- ...-SOS] PASSED                       [ 33%]
+test_morse.py::test_decode[.- .-. - . -- .-----ARTEM1] PASSED            [ 66%]
+test_morse.py::test_decode[-... . . .-.-BEER] PASSED                     [100%]
+
+======================== 3 passed, 1 warning in 0.05s =========================
+
+
+## issue 3
+============================= test session starts =============================
+collecting ... collected 5 items
+
+test_unittest_one_hot_encoder.py::TestOneHotEncoder::test_artem_sukhov_artem PASSED [ 20%]
+test_unittest_one_hot_encoder.py::TestOneHotEncoder::test_artem_sukhov_me PASSED [ 40%]
+test_unittest_one_hot_encoder.py::TestOneHotEncoder::test_empty_input PASSED [ 60%]
+test_unittest_one_hot_encoder.py::TestOneHotEncoder::test_invalid_input PASSED [ 80%]
+test_unittest_one_hot_encoder.py::TestOneHotEncoder::test_list_artem_sukhov_me PASSED [100%]
+
+======================== 5 passed, 1 warning in 0.06s =========================
+
+
+## issue 4
+============================= test session starts =============================
+collecting ... collected 5 items
+
+test_pytest_one_hot_encoder.py::test_empty_input PASSED                  [ 20%]
+test_pytest_one_hot_encoder.py::test_invalid_input PASSED                [ 40%]
+test_pytest_one_hot_encoder.py::test_artem_sukhov_me PASSED              [ 60%]
+test_pytest_one_hot_encoder.py::test_list_artem_sukhov_me PASSED         [ 80%]
+test_pytest_one_hot_encoder.py::test_artem_sukhov_artem PASSED           [100%]
+
+============================== 5 passed in 0.05s ==============================
+
+
+## issue 5
+============================= test session starts =============================
+collecting ... collected 3 items
+
+test_what_is_year_now.py::TestWhatIsYearNow::test_dmy_format PASSED      [ 33%]
+test_what_is_year_now.py::TestWhatIsYearNow::test_invalid_format PASSED  [ 66%]
+test_what_is_year_now.py::TestWhatIsYearNow::test_ymd_format PASSED      [100%]
+
+======================== 3 passed, 1 warning in 0.04s =========================
